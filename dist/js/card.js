@@ -268,7 +268,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_MegaFilterCard_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/MegaFilterCard.vue */ "./resources/js/components/MegaFilterCard.vue");
+/* harmony import */ var _components_MegaFilterCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/MegaFilterCard */ "./resources/js/components/MegaFilterCard.vue");
 /* harmony import */ var _components_MegaFilter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/MegaFilter */ "./resources/js/components/MegaFilter.js");
 
 
@@ -280,7 +280,7 @@ Nova.booting(function (app) {
     }
     return componentFn.call(this, name, component);
   };
-  app.component('mega-filter-card', _components_MegaFilterCard_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
+  app.component('mega-filter-card', _components_MegaFilterCard__WEBPACK_IMPORTED_MODULE_0__["default"]);
 });
 
 /***/ }),

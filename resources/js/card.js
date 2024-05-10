@@ -1,4 +1,4 @@
-import MegaFilterCard from './components/MegaFilterCard.vue'
+import MegaFilterCard from './components/MegaFilterCard'
 import { registerMixin } from './components/MegaFilter'
 
 Nova.booting(app => {
