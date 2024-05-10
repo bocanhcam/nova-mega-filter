@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Hoangdv\MegaFilter;
+namespace Hoangdv\NovaMegaFilter;
 
 use Illuminate\Http\Resources\MergeValue;
 use Laravel\Nova\Http\Controllers\FilterController;
