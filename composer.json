@@ -1,38 +1,18 @@
 {
-    "name": "digital-creative/nova-mega-filter",
+    "name": "hoangdv/nova-mega-filter",
     "description": "Allows you to control the columns and filters shown on your nova resources.",
-    "keywords": [
-        "laravel",
-        "nova",
-        "filter",
-        "columns",
-        "big-filter"
-    ],
-    "authors": [
-        {
-            "name": "Rafael Milewski"
-        }
-    ],
     "license": "MIT",
-    "require": {
-        "php": ">=8.0",
-        "laravel/nova": "^4.0"
-    },
     "autoload": {
         "psr-4": {
-            "DigitalCreative\\MegaFilter\\": "src/"
+            "Hoangdv\\NovaMegaFilter\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "DigitalCreative\\MegaFilter\\MegaFilterServiceProvider"
-            ]
+    "authors": [
+        {
+            "name": "et-hoangdv",
+            "email": "258034_evn@entetsu.co.jp"
         }
-    },
-    "config": {
-        "sort-packages": true
-    },
+    ],
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "require": {}
 }
