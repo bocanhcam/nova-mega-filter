@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace DigitalCreative\MegaFilter;
+namespace Hoangdv\MegaFilter;
 
 use Illuminate\Support\Collection;
 use Laravel\Nova\Http\Requests\NovaRequest;
