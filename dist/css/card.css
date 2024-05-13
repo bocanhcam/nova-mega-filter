@@ -1,3 +1,6 @@
+.nova-mega-filter :is(.visible) {
+    visibility: visible
+}
 .nova-mega-filter :is(.relative) {
     position: relative
 }

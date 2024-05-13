@@ -11,6 +11,13 @@
             "Hoangdv\\NovaMegaFilter\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hoangdv\\NovaMegaFilter\\MegaFilterServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "et-hoangdv",
