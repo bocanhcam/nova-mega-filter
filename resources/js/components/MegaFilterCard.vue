@@ -5,7 +5,7 @@
         :lens="lens"
         :filters="card.filters"
         :columns="card.columns"
-        :should-collapsed="card.shouldCollapsed"
+        :open="card.open"
         :resource-name="resourceName"
         :via-resource="viaResource"
         :via-resource-id="viaResourceId"

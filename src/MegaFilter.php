@@ -37,9 +37,9 @@ class MegaFilter extends MergeValue
         return $this->withMeta([ 'columns' => $columns ]);
     }
 
-    public function shouldCollapsed(bool $shouldCollapsed = false): self
+    public function open(bool $open = false): self
     {
-        return $this->withMeta(['shouldCollapsed' => $shouldCollapsed]);
+        return $this->withMeta(['open' => $open]);
     }
 
     private function request(): NovaRequest

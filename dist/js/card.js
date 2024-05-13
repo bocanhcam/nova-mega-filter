@@ -31,7 +31,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   mixins: [_mixins_Filterable__WEBPACK_IMPORTED_MODULE_0__["default"], _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_1__["default"]],
   emits: ['filter-changed'],
-  props: ['filters', 'columns', 'shouldCollapsed', 'resourceName', 'viaResource', 'viaResourceId', 'viaRelationship'],
+  props: ['filters', 'columns', 'open', 'resourceName', 'viaResource', 'viaResourceId', 'viaRelationship'],
   data: function data() {
     return {
       collapsed: false
@@ -74,7 +74,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }))();
   },
   beforeMount: function beforeMount() {
-    this.collapsed = this.shouldCollapsed ? this.shouldCollapsed : this.filtersAreApplied;
+    this.collapsed = this.open ? this.open : this.filtersAreApplied;
   }
 });
 
@@ -251,12 +251,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     lens: $props.lens,
     filters: $props.card.filters,
     columns: $props.card.columns,
-    "should-collapsed": $props.card.shouldCollapsed,
+    open: $props.card.open,
     "resource-name": $props.resourceName,
     "via-resource": $props.viaResource,
     "via-resource-id": $props.viaResourceId,
     "via-relationship": $props.viaRelationship
-  }, null, 8 /* PROPS */, ["lens", "filters", "columns", "should-collapsed", "resource-name", "via-resource", "via-resource-id", "via-relationship"]);
+  }, null, 8 /* PROPS */, ["lens", "filters", "columns", "open", "resource-name", "via-resource", "via-resource-id", "via-relationship"]);
 }
 
 /***/ }),
@@ -558,7 +558,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".dark .nova-mega-filter.\\--expanded[data-v-6e238635] {\n  background-color: rgba(var(--colors-gray-700));\n}\n.dark .nova-mega-filter.\\--active[data-v-6e238635] {\n  background-color: rgba(var(--colors-primary-500));\n}\n.dark .nova-mega-filter.\\--active .filter__header[data-v-6e238635] {\n  color: rgba(var(--colors-gray-800));\n}\n.dark .nova-mega-filter .filter__inner[data-v-6e238635] {\n  background-color: rgba(var(--colors-gray-900));\n}\n.dark .nova-mega-filter .filter__header[data-v-6e238635] {\n  color: rgba(var(--colors-gray-400));\n}\n.dark .nova-mega-filter .filter__loop[data-v-6e238635]:hover {\n  --tw-border-opacity: 1;\n  border-color: rgb(31 41 55 / var(--tw-border-opacity));\n}\n.nova-mega-filter[data-v-6e238635] {\n  overflow: visible !important;\n  --columns-mobile: 1;\n  --columns-desktop: 2;\n}\n.nova-mega-filter.\\--expanded[data-v-6e238635] {\n  background-color: rgba(var(--colors-gray-300));\n}\n.nova-mega-filter.\\--active[data-v-6e238635] {\n  background-color: rgba(var(--colors-primary-500));\n}\n.nova-mega-filter.\\--active .filter__header[data-v-6e238635] {\n  color: white;\n}\n.nova-mega-filter .filter__inner[data-v-6e238635] {\n  background-color: white;\n}\n.nova-mega-filter .filter__header[data-v-6e238635] {\n  color: rgba(var(--colors-gray-500));\n}\n.nova-mega-filter .filter__loop[data-v-6e238635] {\n  width: calc(100% / var(--columns-mobile));\n  margin: 1px;\n  border-radius: 0.25rem;\n  border-width: 1px;\n  border-color: transparent;\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.nova-mega-filter .filter__loop[data-v-6e238635]:hover {\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n@media (min-width: 1024px) {\n.nova-mega-filter .filter__loop[data-v-6e238635] {\n    width: calc(100% / var(--columns-desktop) - 2px);\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".dark .nova-mega-filter.\\--expanded[data-v-6e238635] {\n  background-color: rgba(var(--colors-gray-700));\n}\n.dark .nova-mega-filter.\\--active[data-v-6e238635] {\n  background-color: rgba(var(--colors-primary-500));\n}\n.dark .nova-mega-filter.\\--active .filter__header[data-v-6e238635] {\n  color: rgba(var(--colors-gray-800));\n}\n.dark .nova-mega-filter .filter__inner[data-v-6e238635] {\n  background-color: rgba(var(--colors-gray-900));\n}\n.dark .nova-mega-filter .filter__header[data-v-6e238635] {\n  color: rgba(var(--colors-gray-400));\n}\n.dark .nova-mega-filter .filter__loop[data-v-6e238635]:hover {\n  --tw-border-opacity: 1;\n  border-color: rgb(31 41 55 / var(--tw-border-opacity));\n}\n.nova-mega-filter[data-v-6e238635] {\n  overflow: visible;\n  --columns-mobile: 1;\n  --columns-desktop: 2;\n}\n.nova-mega-filter.\\--expanded[data-v-6e238635] {\n  background-color: rgba(var(--colors-gray-300));\n}\n.nova-mega-filter.\\--active[data-v-6e238635] {\n  background-color: rgba(var(--colors-primary-500));\n}\n.nova-mega-filter.\\--active .filter__header[data-v-6e238635] {\n  color: white;\n}\n.nova-mega-filter .filter__inner[data-v-6e238635] {\n  background-color: white;\n}\n.nova-mega-filter .filter__header[data-v-6e238635] {\n  color: rgba(var(--colors-gray-500));\n}\n.nova-mega-filter .filter__loop[data-v-6e238635] {\n  width: calc(100% / var(--columns-mobile));\n  margin: 1px;\n  border-radius: 0.25rem;\n  border-width: 1px;\n  border-color: transparent;\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.nova-mega-filter .filter__loop[data-v-6e238635]:hover {\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n@media (min-width: 1024px) {\n.nova-mega-filter .filter__loop[data-v-6e238635] {\n    width: calc(100% / var(--columns-desktop) - 2px);\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
