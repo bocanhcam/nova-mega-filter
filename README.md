@@ -86,6 +86,17 @@ public function filters(RequestRequest $request): array
 }
 ```
 
+By default, the filter section is collapsed. If you want it to open or expanded initially, you can do:
+
+```php
+public function filters(RequestRequest $request): array
+{
+    return [
+        MegaFilter::make([ ... ])->open(),
+    ];
+}
+```
+
 > Note: At the moment this package only works with a single Mega Filter per resource, adding multiple on the same resource may result in unexpected behavior.
 
 ## ⭐️ Show Your Support
