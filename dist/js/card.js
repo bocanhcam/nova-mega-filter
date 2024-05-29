@@ -40,11 +40,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   methods: {
     clearFilters: function clearFilters() {
       this.clearSelectedFilters();
-      Nova.$emit('refresh-resources');
     },
     onChange: function onChange() {
       this.filterChanged();
-      Nova.$emit('refresh-resources');
     }
   },
   computed: {
